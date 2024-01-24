@@ -81,9 +81,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="menu__name__group"> 
         <!--		<span class="menu__category">期間限定</span>-->
         <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">チキンオーバーライス</span></div>
-        <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
-          <p class="menu__price">800</p>
-          <small>円（税込）</small></div>
+        <!-- <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
+          <p class="menu__price">800</p> 
+          <small>円（税込）</small></div> -->
         <p class="menu__comment">秘伝のスパイスで漬け込んで揚げたチキンをバター風味のターメリックライスにのせた屋台フード。新鮮な野菜つき。</p>
       </div>
     </div>
@@ -94,9 +94,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="menu__name__group"> 
         <!--		<span class="menu__category">期間限定</span>-->
         <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">ファラフェル</span></div>
-        <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
+        <!-- <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
           <p class="menu__price">800</p>
-          <small>円（税込）</small></div>
+          <small>円（税込）</small></div> -->
         <p class="menu__comment">日本人向けにアレンジした中東の料理ファラフェル(ヒヨコマメのコロッケ)はヘルシーで食べやすくお子様にもオススメです！新鮮な野菜つき。</p>
       </div>
     </div>
@@ -107,9 +107,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="menu__name__group"> 
         <!--		<span class="menu__category">期間限定</span>-->
         <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">プルドポーク</span></div>
-        <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
+        <!-- <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
           <p class="menu__price">800</p>
-          <small>円（税込）</small></div>
+          <small>円（税込）</small></div> -->
         <p class="menu__comment">半日かけてじっくり煮込んだ柔らかいポークをバター風味のターメリックライスにのせて。旨味が凝縮。新鮮な野菜つき。</p>
       </div>
     </div>
@@ -121,9 +121,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!--		<span class="menu__category">期間限定</span>-->
         <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">チキンオーバーライス＋<br class="sp">
           ファラフェル</span> </div>
-        <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
+        <!-- <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
           <p class="menu__price">900</p>
-          <small>円（税込）</small></div>
+          <small>円（税込）</small></div> -->
         <p class="menu__comment">チキンとファラフェルの2種盛りオーバーライス。</p>
       </div>
     </div>
@@ -135,9 +135,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!--		<span class="menu__category">期間限定</span>-->
         <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">チキンオーバーライス＋<br class="sp">
           プルドポーク</span> </div>
-        <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
+        <!-- <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
           <p class="menu__price">900</p>
-          <small>円（税込）</small></div>
+          <small>円（税込）</small></div> -->
         <p class="menu__comment">チキンとプルドポークの2種盛りオーバーライス。</p>
       </div>
     </div>
@@ -149,9 +149,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <!--		<span class="menu__category">期間限定</span>-->
         <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">ファラフェル＋<br class="sp">
           プルドポーク</span> </div>
-        <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
+        <!-- <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
           <p class="menu__price">900</p>
-          <small>円（税込）</small></div>
+          <small>円（税込）</small></div> -->
         <p class="menu__comment">ファラフェルとプルドポークの2種盛りオーバーライス。</p>
       </div>
     </div>
@@ -164,9 +164,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">チキンオーバーライス＋<br class="sp">
           ファラフェル＋<br class="sp">
           プルドポーク</span> </div>
-        <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
+        <!-- <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
           <p class="menu__price">1,000</p>
-          <small>円（税込）</small></div>
+          <small>円（税込）</small></div> -->
         <p class="menu__comment">チキン、ファラフェル、プルドポークの3種盛りオーバーライス。</p>
       </div>
     </div>
