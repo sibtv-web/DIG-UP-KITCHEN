@@ -119,8 +119,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="menu__text">
       <div class="menu__name__group"> 
         <!--		<span class="menu__category">期間限定</span>-->
-        <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">チキンオーバーライス＋<br class="sp">
-          ファラフェル</span> </div>
+        <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">チキンオーバーライス＋<br class="sp">ファラフェル</span> </div>
         <!-- <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
           <p class="menu__price">900</p>
           <small>円（税込）</small></div> -->
@@ -133,8 +132,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="menu__text">
       <div class="menu__name__group"> 
         <!--		<span class="menu__category">期間限定</span>-->
-        <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">チキンオーバーライス＋<br class="sp">
-          プルドポーク</span> </div>
+        <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">チキンオーバーライス＋<br class="sp">プルドポーク</span> </div>
         <!-- <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
           <p class="menu__price">900</p>
           <small>円（税込）</small></div> -->
@@ -147,8 +145,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="menu__text">
       <div class="menu__name__group"> 
         <!--		<span class="menu__category">期間限定</span>-->
-        <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">ファラフェル＋<br class="sp">
-          プルドポーク</span> </div>
+        <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">ファラフェル＋<br class="sp">プルドポーク</span> </div>
         <!-- <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
           <p class="menu__price">900</p>
           <small>円（税込）</small></div> -->
@@ -161,9 +158,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="menu__text">
       <div class="menu__name__group"> 
         <!--		<span class="menu__category">期間限定</span>-->
-        <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">チキンオーバーライス＋<br class="sp">
-          ファラフェル＋<br class="sp">
-          プルドポーク</span> </div>
+        <div class="menu__name"> <img class="icon__diamond" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_diamond.svg" alt=""/> <span class="menu__name__text">チキンオーバーライス＋<br class="sp">ファラフェル＋<br class="sp">プルドポーク</span> </div>
         <!-- <div class="menu__price__group"> <img class="icon__package" src="<?php echo get_theme_file_uri(); ?>/assets/images/icon_package.svg" alt=""/>
           <p class="menu__price">1,000</p>
           <small>円（税込）</small></div> -->

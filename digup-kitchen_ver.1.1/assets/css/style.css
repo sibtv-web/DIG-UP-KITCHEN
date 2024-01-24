@@ -775,7 +775,7 @@ a.btn__totop:hover {
   padding-right: .6em;
 }
 .menu__name__text {
-  font-size: 1.57em;
+  font-size: 1.6em;
 }
 .menu__category {
   padding: .3em .6em;
@@ -796,7 +796,7 @@ a.btn__totop:hover {
   margin: 0 0 .2em;
 }
 .menu__comment {
-  margin: 4em auto;
+  margin: 1em auto 4em;
 }
 @media screen and (min-width: 768px) {
   .pg__menu__list {
