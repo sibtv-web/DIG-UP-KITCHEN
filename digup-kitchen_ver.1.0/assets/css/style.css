@@ -1,0 +1,816 @@
+@charset "UTF-8";
+/*!
+Theme Name: digup-kitchen_ver.1.0
+Description: In 2021, DIG UP KITCHEN's theme.
+Author: sib.tv
+Author URI: https://www.sib.tv/
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+ul[class], ol[class] {
+  padding: 0;
+  list-style: none;
+}
+body, h1, h2, h3, h4, p, figure, blockquote, dl, dd {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  font-size: 62.5%;
+  width: 100%;
+  height: 100%;
+}
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  background-color: #fff2dc;
+  color: #232323;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: 1.4px;
+  /* プロポーショナルメトリクスを有効にする指定 */
+  font-feature-settings: "palt"1;
+  width: 100%;
+  /*  height: 100%;*/
+  word-break: break-all;
+  text-align: justify;
+  text-justify: inter-ideograph;
+}
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.5rem;
+    min-width: 1200px;
+  }
+}
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+img {
+  max-width: 100%;
+  display: block;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: .01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: .01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+a {
+  color: inherit;
+  transition: .3s;
+  text-decoration: none;
+}
+a:hover {
+  opacity: .6;
+}
+/*
+ * common
+ */
+.pc {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .pc {
+    display: block;
+  }
+}
+.sp {
+  display: block;
+}
+@media screen and (min-width: 768px) {
+  .sp {
+    display: none;
+  }
+}
+.cf::after {
+  clear: both;
+  content: '';
+  display: block;
+}
+.cursor {
+  cursor: pointer;
+}
+ul, ol {
+  list-style: none;
+}
+/*
+ * ボタン（黒）
+ */
+.button__area {
+  margin: 2em auto;
+}
+.btn {
+  text-decoration: none;
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+}
+a.btn::after {
+  content: '';
+  width: 14em;
+  margin-top: 1em;
+  height: 2px;
+  background: #232323;
+  transform: scale(1, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+a.btn:hover::after {
+  transform: scale(0.5, 1);
+}
+a.btn:hover {
+  opacity: 1.0;
+}
+@media screen and (min-width: 768px) {
+  a.btn::after {
+    width: 20em;
+  }
+}
+/*
+ * ボタン（白）
+ */
+.btn__white {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.4em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2em auto;
+}
+a.btn__white::after {
+  content: '';
+  width: 14em;
+  margin-top: 1em;
+  height: 2px;
+  background: #fff;
+  transform: scale(1, 1);
+  transform-origin: center top;
+  transition: transform .3s;
+}
+a.btn__white:hover::after {
+  transform: scale(0.5, 1);
+}
+a.btn__white:hover {
+  opacity: 1.0;
+}
+@media screen and (min-width: 768px) {
+  a.btn__white::after {
+    width: 20em;
+  }
+}
+/*
+ * loading
+ */
+#loader{                     /* id="loader"の設定 */　　　　　　　　　　　　　
+  width: 80px;            /* 表示領域の幅を設定 */
+  height: 80px;           /* 表示領域の高さを設定 */
+  display: none;
+  position: fixed;         /* スクロールしても表示位置が固定 */
+  _position: absolute;     /* IE6対策 */
+  top: 50%;                /* ブラウザの表示の高さの半分にloader.gifを配置 */
+  left: 50%;               /* ブラウザの表示の幅の半分にlodaer.gifを配置 */
+  margin-top: -40px;       /* heightの半分のマイナス値 */
+  margin-left: -40px;      /* widthの半分のマイナス値 */
+  z-index: 5;             /* #fadeより多い値 */
+}
+#fade{                       /* id="fade"の設定 */
+  width: 100%;             /* ブラウザの表示の幅の大きさに指定 */
+  height: 100%;            /* ブラウザの表示の高さの大きさに指定 */
+  display: none;
+  background-color: #232323;  /* 表示するフェイドの色を指定 */
+  position: fixed;      /* スクロールしても表示の位置が固定 */
+  top: 0px;                /* 上からの配置位置を指定 */
+  left: 0px;               /* 左からの配置位置を指定 */
+  z-index: 1;              /* #loaderより少ない値 */
+}
+/*
+ * Animate.cssの調整
+ */
+.animate__animated{
+  animation-duration: 1.6s; /* アニメーションの時間 */
+  animation-delay: 1s; /* アニメーション開始時間 */
+}
+/*
+ * スクロールエフェクト
+ */
+.effect-fade {
+  opacity: 0;
+  transform: translate(0, 10em);
+  transition: transform .3s;
+}
+.effect-fade.effect-scroll {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+/*
+ * header
+ */
+.header__inner__sp {
+  position: fixed;
+  width: 100vw;
+  height: 4em;
+  background-color: #232323;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 2000;
+  padding: .5em;
+}
+.nav__logo {
+  width: 4.8em;
+}
+.nav__icon__list {
+  display: flex;
+  align-items: center;
+}
+.nav__icon__list li {
+  color: #fff;
+  font-size: 2em;
+  padding: .3em;
+}
+/*
+ * スクロール（PCのみ）
+ */
+.scrollbar {
+  position: absolute;
+  color: #fff;
+  font-family: "Poppins";
+  writing-mode: vertical-rl;
+  font-size: 0.6em;
+  text-align: center;
+  z-index: 90;
+  margin: 80vh auto auto 1em;
+}
+.scrollbar__line {
+  width: 2.4px;
+  height: 100px;
+  margin: 1em auto;
+  background-color: transparent;
+  position: relative;
+  overflow: hidden;
+}
+.scrollbar__line::before {
+  content: '';
+  width: 2.4px;
+  height: 100px;
+  margin: 50px auto 0;
+  background-color: #fff;
+  position: absolute;
+  top: -150px;
+  left: 0;
+  -webkit-animation: scrollbar__line 2.5s ease 0s infinite normal;
+  animation: scrollbar__line 2.5s ease 0s infinite normal;
+}
+@keyframes scrollbar__line {
+  0% {
+    -webkit-transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
+  }
+  60% {
+    -webkit-transform: translate3d(-50%, 100px, 0);
+    transform: translate3d(-50%, 100px, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(-50%, 100px, 0);
+    transform: translate3d(-50%, 100px, 0);
+  }
+}
+@media screen and (min-width: 768px) {
+  .header__inner__pc {
+    position: fixed;
+    z-index: 2000;
+    bottom: 40vh;
+    left: 0;
+  }
+  .nav__logo {
+    width: 2em;
+    padding-top: .5em;
+  }
+  .nav__icon__list {
+    flex-direction: column;
+    background-color: #232323;
+    border-radius: 0 2em 2em 0;
+  }
+  .nav__icon__list li {
+    padding: .3em;
+  }
+  .header__inner__sp {
+    display: none;
+  }
+}
+/*
+ * キービジュアル
+ */
+.hero {
+  background: url(../images/bg_hero_sp.svg) no-repeat center;
+  background-size: cover;
+  min-height: 900px;
+  padding-top: 4em;
+}
+.hero__contents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.hero__img {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items:  flex-start;
+  margin-left: 10%;
+}
+.hero__img img {
+  width: 90%;
+}
+.hero__logo, .hero__contents p {
+  position: absolute;
+}
+.hero__logo {
+  width: 60%;
+  margin: 3em auto;
+}
+.hero__contents p {
+  color: #ffffff;
+  width: 60%;
+  margin: 54% auto;
+  text-shadow: 0 0 1em #232323;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background: url("../images/bg_hero_pc.svg") no-repeat center;
+    margin-top: -4em;
+    margin-left: -1em;
+    padding-top: 0;
+    background-size: cover;
+    min-height: 1200px;
+  }
+  .hero__logo {
+    width: 40%;
+    margin: 10em auto;
+  }
+  .hero__contents p {
+    font-size: 1.2em;
+    width: 40%;
+    margin: 36% auto;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .hero {
+    min-height: 1600px;
+  }
+}
+/*
+ * トップの料理メニュー
+ */
+.index__food {}
+.index__food__contents {
+  width: 90%;
+  margin: -6em auto 5em;
+}
+.index__food__menu--right, .index__food__menu--left {
+  margin: 5em auto;
+}
+.index__food__ttl__image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.index__food__menu--right p, .index__food__menu--left p {
+  max-width: 600px;
+  padding-top: 4em;
+}
+.index__food__img--left, .index__food__img--right {
+  width: 50%;
+  position: absolute;
+  z-index: -1000;
+}
+.index__food__img--right {
+  right: 0;
+}
+@media screen and (min-width: 768px) {
+  .index__food__contents {
+    max-width: 1200px;
+    margin-top: -16em;
+  }
+  .index__food__menu--right, .index__food__menu--left {
+    margin: 16em auto;
+  }
+  .index__food__menu--right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+  .index__food__menu--left {
+    align-items: flex-start;
+  }
+  .index__food__img--left, .index__food__img--right {
+    width: 40%;
+  }
+  .index__food__menu--right p, .index__food__menu--left p {
+  padding-top: 3em;
+  }
+  .index__food__ttl--right {
+    right: calc((100vw - 1200px)/2);
+  }
+  .index__food__ttl--left {
+    left: calc((100vw - 1200px)/2);
+  }
+}
+/*
+ * スケジュール
+ */
+.index__schedule {
+  background: url("../images/bg_schedule_sp.svg") no-repeat center;
+  background-size: cover;
+  min-height: 1300px;
+}
+.index__contents {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 0;
+}
+.index__ttl__img {
+  display: flex;
+  justify-content: center;
+  margin: 3em auto 0;
+  z-index: -2000;
+  width: 80%;
+}
+.schedule__text {
+  margin: 3em auto 0;
+  width: 90%;
+  color: #fff;
+}
+.schedule__text ul{
+  list-style: none;
+  margin-left: 0;
+  padding-left: 0;
+}
+.schedule__text ul li{
+  padding: 1em 0 1em;
+  border-bottom: solid 1px;
+}
+.schedule__text ul li:last-child{
+  border: none;
+}
+.instagram__text{
+  color: #232323;
+  background-color: #ffffff;
+  text-align: center;
+  padding: .6em;
+}
+@media screen and (min-width: 768px) {
+  .index__schedule {
+    background: url("../images/bg_schedule_pc.svg") no-repeat center;
+    background-size: cover;
+    min-height: 1600px;
+  }
+  .index__ttl__img {
+    margin-top: 10em;
+  }
+  .schedule__text {
+    margin-top: 8em;
+    max-width: 480px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .index__schedule {
+    min-height: 1650px;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .index__schedule {
+    min-height: 2180px;
+  }
+}
+/*
+ * アバウトとお問い合わせ
+ */
+.index__about__img--main {
+  position: absolute;
+  margin: -5em 2em 0 -10em;
+}
+#index__ttl__img--about {
+  width: 60%;
+  margin-top: 3.6em;
+}
+.index__about {
+  width: 90%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about__text--ttl {
+  font-size: 1.6em;
+  width: 90%;
+  margin: 2em auto 0;
+}
+.about__text--body {
+  width: 90%;
+  margin: 3em auto;
+}
+.index__about__img--sub {
+  max-width: 200px;
+  margin: 0 1em 2em auto;
+}
+.index__contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+.index__contact h2 {
+  font-family: 'Poppins';
+  font-size: 3em;
+  text-align: center;
+  margin: .5em auto 1em;
+}
+address {
+  font-style: normal;
+  font-family: 'Poppins';
+  font-size: 1.8em;
+  text-align: center;
+  margin: 1.4em auto;
+}
+@media screen and (min-width: 768px) {
+  .index__about__img--main {
+    margin: -16em auto 0 -10em;
+    max-width: 1400px;
+  }
+  #index__ttl__img--about {
+    width: 50%;
+    margin-right: 20em;
+    margin-top: 9em;
+  }
+  .index__about {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: -2em auto;
+  }
+  .about__text--ttl {
+    margin: 0 auto;
+  }
+  .about__text--body {
+    max-width: 600px;
+  }
+  .index__about__img--sub {
+    max-width: 554px;
+    margin-top: 12em;
+  }
+  .index__contact {
+    position: absolute;
+    width: 400px;
+    margin: 67.5em auto 0 -42em;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .index__about__img--main {
+    margin: -56em auto 0 -10em;
+    max-width: 1800px;
+  }
+  #index__ttl__img--about {
+    margin-top: -8em;
+  }
+  .about__text--ttl {
+    margin: 0 auto;
+  }
+  .index__contact {
+    position: absolute;
+    width: 400px;
+    margin: 48em auto 0 -42em;
+  }
+}
+/*
+ * footer
+ */
+.footer {}
+.footer__bottom {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3em auto 3em;
+}
+.link__contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 90%;
+}
+.link__contents li {
+  display: block;
+  padding: 1em;
+}
+.copyright {
+  font-family: 'Poppins';
+  /*  padding-left: 3em;*/
+}
+@media screen and (min-width: 768px) {
+  .footer__bottom {
+    width: 1200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 24em auto 3em;
+  }
+  .link__contents {
+    display: flex;
+    width: 50%;
+    border-right: 2px solid;
+    color: #232323;
+    justify-content: flex-end;
+  }
+  .link__contents li {
+    display: block;
+    padding-right: 3em;
+  }
+  .copyright {
+    font-family: 'Poppins';
+    padding-left: 3em;
+  }
+}
+/* 
+ * 上へもどるボタン
+ */
+.totop {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.totop__img {
+  height: 3em;
+  filter: drop-shadow(0 0 .3em rgba(255, 242, 220, 1));
+}
+.totop__text {
+  font-family: 'Poppins';
+  font-size: .6em;
+  text-align: center;
+  writing-mode: vertical-rl;
+  margin-top: 1.6em;
+  text-shadow: rgba(255, 242, 220, 1)0 0 .3em;
+}
+a.btn__totop:hover {
+  opacity: 1.0;
+}
+.totop__img:hover {
+  transform: translateY(-1em);
+  transition: transform .3s;
+}
+@media screen and (min-width: 768px) {
+  .totop {
+    right: 2em;
+    bottom: 1em;
+  }
+}
+/*
+ * 下層ページ common
+ */
+.pg__body {
+  background-color: #232323;
+  color: #fff;
+}
+.pg__contents {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 0 auto 2em;
+}
+.pg__ttl__group {
+  padding: 6em 0 3.6em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pg__txt__h2 {
+  align-items: center;
+}
+.pg__ttl img {
+  margin: 0 auto 2em;
+  max-height: 2.4em;
+}
+.pg__ttl__h2 {
+  font-family: 'Poppins';
+  font-size: 3em;
+  color: #fff2dc;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .pg__contents {
+    margin: 0 auto 4em;
+  }
+  .pg__ttl img {
+    max-height: 5em;
+  }
+  .pg__ttl__group p {
+    max-width: 600px;
+  }
+  .pg__ttl__h2 {
+    font-size: 4.8em;
+    max-width: 600px;
+  }
+}
+/*
+ * 下層ページ フッター
+ */
+.footer__pg small {
+  color: #fff;
+}
+.footer__pg .totop__img {
+  filter: none;
+}
+.footer__pg .totop__text {
+  text-shadow: none;
+}
+@media screen and (min-width: 768px) {
+  .footer__pg ul {
+    border-right: 2px solid;
+    color: #fff;
+  }
+  .footer__pg {
+    margin-top: 0;
+  }
+}
+/*
+ * 下層ページ メニューページ
+ */
+.manu__img {
+  margin: 0 auto 1em;
+}
+.menu__name {
+  display: flex;
+  align-items: center;
+  margin: 1em 0 .6em;
+}
+.icon__diamond {
+  height: 1.6em;
+  padding-right: .6em;
+}
+.menu__name__text {
+  font-size: 1.6em;
+}
+.menu__category {
+  padding: .3em .6em;
+  color: #232323;
+  background: #fff;
+}
+.icon__package {
+  height: 1em;
+  padding-right: .6em;
+}
+.menu__price__group {
+  display: flex;
+  align-items: center;
+  float: right;
+}
+.menu__price {
+  font-size: 1.4em;
+  margin: 0 0 .2em;
+}
+.menu__comment {
+  margin: 4em auto;
+}
+@media screen and (min-width: 768px) {
+  .pg__menu__list {
+    margin: 0 auto 3em;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+  }
+  .manu__img {
+    max-width: 570px;
+    margin-bottom: 0;
+    padding-right: 2em;
+  }
+  .menu__text {
+    width: 600px
+  }
+}
