@@ -796,7 +796,7 @@ a.btn__totop:hover {
   margin: 0 0 .2em;
 }
 .menu__comment {
-  margin: 4em auto;
+  margin: 1em auto 4em;
 }
 @media screen and (min-width: 768px) {
   .pg__menu__list {
