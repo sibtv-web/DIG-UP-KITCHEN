@@ -359,7 +359,7 @@ a.btn__white:hover {
     margin-left: -1em;
     padding-top: 0;
     background-size: cover;
-    min-height: 1200px;
+    min-height: 1260px;
   }
   .hero__logo {
     width: 40%;
@@ -374,6 +374,11 @@ a.btn__white:hover {
 @media screen and (min-width: 1800px) {
   .hero {
     min-height: 1600px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .hero {
+    min-height: 2180px;
   }
 }
 /*
@@ -439,7 +444,7 @@ a.btn__white:hover {
 .index__schedule {
   background: url("../images/bg_schedule_sp.svg") no-repeat center;
   background-size: cover;
-  min-height: 1000px;
+  min-height: 540px;
 }
 .index__contents {
   position: relative;
@@ -473,6 +478,9 @@ a.btn__white:hover {
 .schedule__text ul li:last-child{
   border: none;
 }
+.schedule__text p{
+  text-align: center;
+}
 .instagram__text{
   color: #232323;
   background-color: #ffffff;
@@ -483,7 +491,7 @@ a.btn__white:hover {
   .index__schedule {
     background: url("../images/bg_schedule_pc.svg") no-repeat center;
     background-size: cover;
-    min-height: 1600px;
+    min-height: 1500px;
   }
   .index__ttl__img {
     margin-top: 10em;
@@ -495,12 +503,17 @@ a.btn__white:hover {
 }
 @media screen and (min-width: 1400px) {
   .index__schedule {
-    min-height: 1650px;
+    min-height: 1340px;
   }
 }
 @media screen and (min-width: 1800px) {
   .index__schedule {
-    min-height: 2180px;
+    min-height: 1800px;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .index__schedule {
+    min-height: 2260px;
   }
 }
 /*
@@ -556,20 +569,20 @@ address {
 }
 @media screen and (min-width: 768px) {
   .index__about__img--main {
-    margin: -16em auto 0 -10em;
+    margin: -32em auto 0 -10em;
     max-width: 1400px;
   }
   #index__ttl__img--about {
     width: 50%;
     margin-right: 20em;
-    margin-top: 9em;
+    margin-top: 0em;
   }
   .index__about {
     width: 1200px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin: -2em auto;
+    margin: -4em auto;
   }
   .about__text--ttl {
     margin: 0 auto;
@@ -584,7 +597,7 @@ address {
   .index__contact {
     position: absolute;
     width: 400px;
-    margin: 67.5em auto 0 -42em;
+    margin: 56em auto 0 -42em;
   }
 }
 @media screen and (min-width: 1800px) {
@@ -595,13 +608,26 @@ address {
   #index__ttl__img--about {
     margin-top: -8em;
   }
-  .about__text--ttl {
-    margin: 0 auto;
-  }
   .index__contact {
     position: absolute;
     width: 400px;
     margin: 48em auto 0 -42em;
+  }
+}
+@media screen and (min-width: 2000px) {
+   .index__about {
+    margin: -12em auto;
+  }
+  .index__about__img--main {
+    margin: -68em auto 0 -10em;
+  }
+  #index__ttl__img--about {
+    margin-top: -28em;
+  }
+  .index__contact {
+    position: absolute;
+    width: 400px;
+    margin: 36em auto 0 -42em;
   }
 }
 /*
@@ -651,6 +677,12 @@ address {
   .copyright {
     font-family: 'Poppins';
     padding-left: 3em;
+  }
+}
+@media screen and (min-width: 2000px) {
+  .footer__bottom {
+    align-items: center;
+    margin: 32em auto 3em;
   }
 }
 /* 

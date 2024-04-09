@@ -110,25 +110,25 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   <div class="index__contents effect-fade">
     <h1 class="index__ttl__img effect-fade"><img src="<?php echo get_theme_file_uri(); ?>/assets/images/ttl_schedule.svg" type="image/svg+xml" width="1000px" height="auto" alt="スケジュール"/></h1>
     <div class="schedule__text effect-fade">
-      <ul>
+      <!-- <ul>
       <li>毎週月曜日：東京大学本郷キャンパス&nbsp;<br class="sp"><a href="https://goo.gl/maps/NSi3BhcKuv51NxeC8" target="_blank"><small>〈Google Map〉</small></a><br>
       営業時間&nbsp;11:00〜14:00</li>
       <li>隔週火曜日：東京大学駒場キャンパス&nbsp;<br class="sp"><a href="https://goo.gl/maps/cAZi46jQtUr2HjVL7" target="_blank"><small>〈Google Map〉</small></a><br>
       営業時間&nbsp;11:00〜14:00</li>
       <li>隔週火曜日：東京大学医科学研究所&nbsp;<br class="sp"><a href="https://goo.gl/maps/MUUujzxWNyTeg7FH8" target="_blank"><small>〈Google Map〉</small></a><br>
       営業時間&nbsp;11:00〜14:00</li>
-      <!-- <li>毎週水曜日：慶應義塾大学矢上キャンパス&nbsp;<br class="sp"><a href="https://goo.gl/maps/1yTR7c5N5sKEPrch9" target="_blank"><small>〈Google Map〉</small></a><br>
-      営業時間&nbsp;11:00〜13:45 ※関係者のみ</li> -->
+      <li>毎週水曜日：慶應義塾大学矢上キャンパス&nbsp;<br class="sp"><a href="https://goo.gl/maps/1yTR7c5N5sKEPrch9" target="_blank"><small>〈Google Map〉</small></a><br>
+      営業時間&nbsp;11:00〜13:45 ※関係者のみ</li>
       <li>毎週木曜日：渋谷リバーストリート&nbsp;<br class="sp"><a href="https://goo.gl/maps/NVvv6Auv6Tw9rELL9" target="_blank"><small>〈Google Map〉</small></a><br>
       営業時間&nbsp;11:00〜14:00</li> 
-      <!-- <li>不定期：汐留イタリア街&nbsp;<br class="sp"><a href="https://goo.gl/maps/A7PyeTiuj6h5R2Bi8" target="_blank"><small>〈Google Map〉</small></a><br>
+      <li>不定期：汐留イタリア街&nbsp;<br class="sp"><a href="https://goo.gl/maps/A7PyeTiuj6h5R2Bi8" target="_blank"><small>〈Google Map〉</small></a><br>
       営業時間&nbsp;11:00〜14:00</li>
       <li>不定期：有明フロンティア&nbsp;<br class="sp"><a href="https://goo.gl/maps/hqb9YizbExZV2Epe7" target="_blank"><small>〈Google Map〉</small></a><br>
       営業時間&nbsp;11:00〜14:00</li>
       <li>不定期：横浜市役所&nbsp;<br class="sp"><a href="https://goo.gl/maps/WHTSKiUUrYKGc9Ls6" target="_blank"><small>〈Google Map〉</small></a><br>
-      営業時間&nbsp;11:00〜13:45</li> -->
-      </ul>
-      <p class="instagram__text">その他、イベント出店情報は<br class="sp"><a href="https://www.instagram.com/digup_kitchen/" target="_blank"><span>Instagram</span></a>にて更新しています</p>
+      営業時間&nbsp;11:00〜13:45</li>
+      </ul> -->
+      <p>イベント出店情報は<br class="sp"><a href="https://www.instagram.com/digup_kitchen/" target="_blank"><span>Instagram</span></a>にて更新しています</p>
     </div>
     <div class="button__area effect-fade"> <a href="https://www.instagram.com/digup_kitchen/" target="_blank" class="btn__white"> Instagramをみる </a> </div>
   </div>
